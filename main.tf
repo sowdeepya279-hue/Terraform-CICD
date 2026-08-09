@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "sow-dev" {
     ami = "ami-091124c3965bce679"
-    instance_type = "t2.micro"
+    instance_type = "t2.medium"
     tags = {
       Name = "sownit"
     }
